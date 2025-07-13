@@ -189,7 +189,7 @@ T = 500   # Number of time steps
 initial_infected = 10  # Number of initially infected nodes
 
 # Simylation parameters
-num_repeats = 100  # Number of simulation runs
+num_repeats = 1000  # Number of simulation runs
 ## SIS
 epidemic_type = :SIS  
 results_SIS, avg_a_SIS, squared_a_SIS = repeat_temporal_simulation(N, m, T, η, ε, γ, β, μ, σ, initial_infected, num_repeats, epidemic_type)
@@ -216,7 +216,7 @@ plot!(avg_infected_SIS, ribbon=std_infected_SIS/2 ,lw=2, title="SIS Infected Cur
 savefig("peak_SIS.png")
 ### Critical R0
 T = 500   # Number of time steps
-num_repeats = 10  # Number of simulation runs
+num_repeats = 1000  # Number of simulation runs
 R0_times = [0.1, 0.12, 0.15, 0.17, 0.2, 0.22, 0.25, 0.27, 0.3, 0.32, 0.35, 0.37, 0.4, 0.45, 0.5]
 I_inf_temporal = Float64[]
 I_inf_agg20 = Float64[]

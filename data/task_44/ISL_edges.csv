@@ -1,0 +1,5 @@
+nodeID_from,nodeID_to,country_ISO3,country_name,weight
+1,1,ISL,Iceland,5801953
+1,2,ISL,Iceland,2881264
+2,1,ISL,Iceland,2881264
+2,2,ISL,Iceland,9227147
